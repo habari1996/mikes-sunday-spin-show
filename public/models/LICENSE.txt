@@ -1,0 +1,7 @@
+BMW 335i 3D model
+Original: Mike Pan
+Cycles conversion: Blend Swap #87954 (MAC2001)
+License: Creative Commons Attribution 3.0
+https://creativecommons.org/licenses/by/3.0/
+
+Fan-art mesh used with attribution. No BMW trademarks are claimed.

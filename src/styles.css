@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Bebas+Neue&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0b0a09;
+  --color-surface: #141210;
+  --color-surface-2: #1c1916;
+  --color-fg: #f3efe6;
+  --color-muted: #9a9388;
+  --color-faint: #6b6560;
+  --color-accent: #7a9a68;
+  --color-accent-fg: #0b0a09;
+  --color-danger: #c45c4a;
+  --color-dust: #c4a574;
+  --color-border: #2c2824;
+  --color-glass: #0b0a09cc;
+
+  --font-display: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  --font-sans: "Barlow", "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  #app {
+    height: 100%;
+  }
+}
+
+.lot-veil {
+  background: linear-gradient(
+    to top,
+    var(--color-bg) 8%,
+    color-mix(in oklab, var(--color-bg) 72%, transparent) 30%,
+    transparent 56%
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
